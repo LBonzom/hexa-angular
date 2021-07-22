@@ -1,0 +1,47 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "paths": {
+      "adapters-app": [
+        "dist/mon-repo/adapters-app"
+      ],
+      "lib-a": [
+        "dist/lib-a"
+      ],
+      "lib-b": [
+        "dist/lib-b"
+      ],
+      "port-lib-a": [
+        "dist/mon-repo/port-lib-a"
+      ],
+      "port-lib-b": [
+        "dist/mon-repo/port-lib-b"
+      ]
+    },
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2017",
+    "module": "es2020",
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

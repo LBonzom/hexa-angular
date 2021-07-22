@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "pre-commit": "lint-staged --concurrent false",
+    "pre-push": "npm run lint"
+  }
+}
