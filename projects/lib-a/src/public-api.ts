@@ -2,6 +2,5 @@
  * Public API Surface of lib-a
  */
 
-export * from './lib/lib-a.service';
-export * from './lib/lib-a.component';
-export * from './lib/lib-a.module';
+export { LibAModule } from "./lib/lib-a.module";
+export { LibAService } from "./lib/lib-a.service";

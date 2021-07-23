@@ -1,9 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
+import { LibAApiPort } from "port-lib-a";
 
-@Injectable({
-  providedIn: 'root'
-})
-export class LibAService {
+@Injectable()
+export class LibAService implements LibAApiPort {
 
-  constructor() { }
+  apiFromLibA(param: string): "libAResult" {
+    return "libAResult";
+  }
+
+
 }

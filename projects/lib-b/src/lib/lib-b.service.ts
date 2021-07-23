@@ -1,9 +1,12 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
+import { LibBApiPort } from "port-lib-b";
 
-@Injectable({
-  providedIn: 'root'
-})
-export class LibBService {
+@Injectable()
+export class LibBService implements LibBApiPort {
 
-  constructor() { }
+  apiFromLibB(param: string): "libBResult" {
+    return "libBResult";
+  }
+
+
 }

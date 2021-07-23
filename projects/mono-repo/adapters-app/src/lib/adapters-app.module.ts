@@ -7,7 +7,7 @@ import { LibBSpiImplAdapter } from "./lib-b/lib-b-spi.impl.adapter";
 import { LibBUseAdapter } from "./lib-b/lib-b.use.adapter";
 
 
-@NgModule({})
+@NgModule()
 export class AdaptersAppModule {
   static forRoot(adapterService: Type<AdapterSpiPort>): ModuleWithProviders<AdaptersAppModule> {
     return {
@@ -15,7 +15,7 @@ export class AdaptersAppModule {
       providers: [
         {
           provide: AdapterSpiAbstractService,
-          useValue: adapterService
+          useExisting: adapterService
         },
         LibAUseAdapter,
         LibASpiImplAdapter,
